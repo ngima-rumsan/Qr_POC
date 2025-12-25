@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.yourcompany.qrpoc',
   appName: 'qr-poc',
-  webDir: 'dist'
+  webDir: 'dist',
 };
 
 export default config;

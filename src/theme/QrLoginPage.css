@@ -1,0 +1,115 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.scanner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3); /* dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* touches pass through to native scanner */
+  z-index: 1000;
+}
+
+.scanner-frame {
+  width: 300px;   /* frame width */
+  height: 300px;  /* frame height */
+  border: 3px solid #5CE65C;
+  border-radius: 12px;
+  margin-right: 10px; /* optional right margin to visually shift left */
+}
+
+
+
+.video-container { width: 100%; height: 100%; }
+
+/* Design Corners */
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #5CE65C; /* Soft blue from image */
+  border-style: solid;
+  border-width: 4px;
+  z-index: 2;
+}
+.tl { top: 0; left: 0; border-right: 0; border-bottom: 0; border-top-left-radius: 8px; }
+.tr { top: 0; right: 0; border-left: 0; border-bottom: 0; border-top-right-radius: 8px; }
+.bl { bottom: 0; left: 0; border-right: 0; border-top: 0; border-bottom-left-radius: 8px; }
+.br { bottom: 0; right: 0; border-left: 0; border-top: 0; border-bottom-right-radius: 8px; }
+
+.helper-text {
+  color: #888;
+  font-size: 13px;
+  margin: 25px 0 40px 0;
+  text-align: center;
+}
+
+/* Button Group Side-by-Side */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.action-btn {
+  --border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  height: 45px;
+  flex: 1;
+  max-width: 170px;
+  --box-shadow: none;
+  text-transform: none;
+}
+
+.scan-btn {
+  /* Use --background for the button fill */
+  --background: #0e66e9; 
+  /* Use --color for the text/icon color */
+  --color: #ffffff;
+}
+
+.gallery-btn {
+  /* This matches the light gray in your design */
+  --background: #d1d5db; 
+  /* This matches the blue text/icon in your design */
+  --color: #046af7;
+}
+
+/* Ensure the icon inherits the button text color */
+.action-btn ion-icon {
+  color: inherit;
+}
+
+.footer-content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #666;
+}
+
+.link-text {
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
